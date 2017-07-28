@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project Detect_Multiscale ****
+
+make all 
+Building file: ../src/Detect_Multiscale.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Detect_Multiscale.d" -MT"src/Detect_Multiscale.d" -o "src/Detect_Multiscale.o" "../src/Detect_Multiscale.cpp"
+../src/Detect_Multiscale.cpp: In function ‘int main()’:
+../src/Detect_Multiscale.cpp:44:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int j = 0; j < faces.size(); j++) {
+                                   ^
+Finished building: ../src/Detect_Multiscale.cpp
+ 
+Building target: Detect_Multiscale
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Detect_Multiscale"  ./src/Detect_Multiscale.o   -lopencv_objdetect -lopencv_videoio -lopencv_video -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Detect_Multiscale
+ 
+
+**** Build Finished ****

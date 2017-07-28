@@ -1,0 +1,30 @@
+
+**** Build of configuration Debug for project Main ****
+
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src -I/usr/local/src/openalpr/openalpr/src/openalpr -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp: In member function ‘cv::Rect alpr::MotionDetector::MotionDetect(cv::Mat*)’:
+../src/Main.cpp:58:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < contours.size(); i++)
+                                     ^
+../src/Main.cpp:65:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 1; i < rects.size(); i++)
+                                  ^
+Finished building: ../src/Main.cpp
+ 
+Building file: ../src/v.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src -I/usr/local/src/openalpr/openalpr/src/openalpr -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/v.d" -MT"src/v.d" -o "src/v.o" "../src/v.cpp"
+Finished building: ../src/v.cpp
+ 
+Building target: Main
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Main"  ./src/Main.o ./src/v.o   -lopenalpr -ltesseract
+/usr/bin/ld: ./src/Main.o: undefined reference to symbol '_ZN2cv6String10deallocateEv'
+//usr/local/lib/libopencv_core.so.3.2: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make: *** [Main] Error 1
+
+**** Build Finished ****

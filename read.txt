@@ -1,0 +1,6 @@
+AlprFullDetails recognizeFullDetails(cv::Mat img, std::vector<cv::Rect> regionsOfInterest)
+-tham so dau vao la anh, 1 tap cac vung anh quan tam.
+-Thuc hien phat hien tap vung bien roi dua vao phan tich cac ki tu trong vung bien.Voi moi anh 
+phan tich tung ki tu va tinh toan tat ca cac ki tu co the va do tin cay cua cac ki tu
+-Tao ra mot top n danh sach cac bien dua tren do tin cay 
+-> Ket qua tra ve chua AlprPlateResult chua 1 danh sach cac AlprPlate(chua cac ki tu bien so,do tin cay 

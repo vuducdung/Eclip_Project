@@ -1,0 +1,56 @@
+
+**** Build of configuration Debug for project RunMain ****
+
+make all 
+Building file: ../src/Motion_Detect.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src/openalpr -I/usr/local/src/openalpr/openalpr/src/video -I/usr/local/include/opencv -I/usr/local/src/openalpr/openalpr/src -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Motion_Detect.d" -MT"src/Motion_Detect.d" -o "src/Motion_Detect.o" "../src/Motion_Detect.cpp"
+Finished building: ../src/Motion_Detect.cpp
+ 
+Building file: ../src/RunMain.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src/openalpr -I/usr/local/src/openalpr/openalpr/src/video -I/usr/local/include/opencv -I/usr/local/src/openalpr/openalpr/src -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RunMain.d" -MT"src/RunMain.d" -o "src/RunMain.o" "../src/RunMain.cpp"
+In file included from ../src/RunMain.cpp:18:0:
+/usr/local/src/openalpr/openalpr/src/tclap/CmdLine.h: In member function ‘bool TCLAP::CmdLine::parse(std::vector<std::basic_string<char> >&)’:
+/usr/local/src/openalpr/openalpr/src/tclap/CmdLine.h:439:7: warning: variable ‘estat’ set but not used [-Wunused-but-set-variable]
+   int estat = 0;
+       ^
+In file included from ../src/RunMain.cpp:22:0:
+../src/videobuffer.h: In member function ‘int VideoDispatcher::getLatestFrame(cv::Mat*, std::vector<cv::Rect_<int> >&)’:
+../src/videobuffer.h:42:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = 0; i < this->latestRegionsOfInterest.size(); i++)
+                                                              ^
+../src/RunMain.cpp: In function ‘int main(int, const char**)’:
+../src/RunMain.cpp:299:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i = 0; i < files.size(); i++)
+                                   ^
+../src/RunMain.cpp: In function ‘bool detectandshow(alpr::Alpr*, cv::Mat, std::string, bool)’:
+../src/RunMain.cpp:365:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < results.plates.size(); i++)
+                                           ^
+../src/RunMain.cpp:375:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int k = 0; k < results.plates[i].topNPlates.size(); k++)
+                                                          ^
+Finished building: ../src/RunMain.cpp
+ 
+Building file: ../src/videobuffer.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src/openalpr -I/usr/local/src/openalpr/openalpr/src/video -I/usr/local/include/opencv -I/usr/local/src/openalpr/openalpr/src -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/videobuffer.d" -MT"src/videobuffer.d" -o "src/videobuffer.o" "../src/videobuffer.cpp"
+In file included from ../src/videobuffer.cpp:30:0:
+../src/videobuffer.h: In member function ‘int VideoDispatcher::getLatestFrame(cv::Mat*, std::vector<cv::Rect_<int> >&)’:
+../src/videobuffer.h:42:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = 0; i < this->latestRegionsOfInterest.size(); i++)
+                                                              ^
+../src/videobuffer.cpp: In member function ‘void VideoBuffer::connect(std::string, int)’:
+../src/videobuffer.cpp:82:22: warning: unused variable ‘t’ [-Wunused-variable]
+     tthread::thread* t = new tthread::thread(imageCollectionThread, (void*) dispatcher);
+                      ^
+Finished building: ../src/videobuffer.cpp
+ 
+Building target: RunMain
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "RunMain"  ./src/Motion_Detect.o ./src/RunMain.o ./src/videobuffer.o   -lopencv_videostab -lpthread -lopenalpr -lopencv_video -lopencv_videoio -lopencv_objdetect -lopencv_imgcodecs -lopencv_core -lopencv_highgui -ltesseract
+Finished building target: RunMain
+ 
+
+**** Build Finished ****

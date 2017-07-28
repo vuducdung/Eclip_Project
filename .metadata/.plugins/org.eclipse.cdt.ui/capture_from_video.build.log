@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project capture_from_video ****
+
+make all 
+Building file: ../src/capture.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capture.d" -MT"src/capture.d" -o "src/capture.o" "../src/capture.cpp"
+Finished building: ../src/capture.cpp
+ 
+Building target: capture_from_video
+Invoking: Cross G++ Linker
+g++ -L/usr/local/lib -o "capture_from_video"  ./src/capture.o   -lopencv_core -lopencv_highgui
+/usr/bin/ld: ./src/capture.o: undefined reference to symbol '_ZN2cv6imreadERKNS_6StringEi'
+//usr/local/lib/libopencv_imgcodecs.so.3.2: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make: *** [capture_from_video] Error 1
+
+**** Build Finished ****

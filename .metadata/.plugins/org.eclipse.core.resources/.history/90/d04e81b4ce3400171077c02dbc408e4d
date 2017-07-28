@@ -1,0 +1,4 @@
+namedWindow("Number", CV_WND_PROP_ASPECTRATIO);
+			imshow("Number", pic);
+			//while(waitKey(30)>=0) break;
+			waitKey(1);

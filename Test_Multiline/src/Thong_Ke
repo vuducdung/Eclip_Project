@@ -1,0 +1,11 @@
+1.png: 1 nhin thay : detect duoc 1
+2.png: 2 nhin thay : detect duoc 2
+3.png: 1 nhin thay : detect duoc 1
+4.png: 1 nhin thay : detect duoc 2 (co 1 negative)
+5.png: 2 nhin thay : detect duoc 2
+6.png: 1 nhin thay : detect duoc 1
+7.png: 1 nhin thay : detect duoc 1
+8.png: 2 nhin thay : detect duoc 2
+9.png: 1 nhin thay : detect duoc 1
+10.png: 1 nhin thay : detect duoc 1
+ti failpositive/positive = 1/14

@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project ExamA ****
+
+make all 
+Building file: ../src/image.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/dung/opencv/opencv-3.2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/image.d" -MT"src/image.d" -o "src/image.o" "../src/image.cpp"
+Finished building: ../src/image.cpp
+ 
+Building target: ExamA
+Invoking: GCC C++ Linker
+g++ -L/home/dung/opencv/opencv-3.2.0/release/lib -o "ExamA"  ./src/image.o   -lopencv-core -l\ opencv_imgproc -lopencv_highgui  -lopencv_ml  -lopencv_video  -lpencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -l\ opencv_flann
+/usr/bin/ld: cannot find -lopencv-core
+/usr/bin/ld: cannot find -l opencv_imgproc
+/usr/bin/ld: cannot find -lpencv_features2d
+/usr/bin/ld: cannot find -lopencv_contrib
+/usr/bin/ld: cannot find -lopencv_legacy
+/usr/bin/ld: cannot find -l opencv_flann
+collect2: error: ld returned 1 exit status
+make: *** [ExamA] Error 1
+
+**** Build Finished ****

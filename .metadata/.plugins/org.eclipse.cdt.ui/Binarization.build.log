@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project Binarization ****
+
+make all 
+Building file: ../src/Binarization.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/src/openalpr/openalpr/src/openalpr/textdetection -I/usr/local/src/openalpr/openalpr/src/openalpr/detection -I/usr/local/include/opencv -I/usr/local/src/openalpr/openalpr/src/openalpr -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Binarization.d" -MT"src/Binarization.d" -o "src/Binarization.o" "../src/Binarization.cpp"
+../src/Binarization.cpp: In function ‘int main()’:
+../src/Binarization.cpp:79:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < results.plates.size(); i++)
+                                          ^
+../src/Binarization.cpp:84:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int k = 0; k < plate.topNPlates.size(); k++)
+                                             ^
+Finished building: ../src/Binarization.cpp
+ 
+Building target: Binarization
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Binarization"  ./src/Binarization.o   -lopencv_core -lopencv_objdetect -lopenalpr -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc
+Finished building target: Binarization
+ 
+
+**** Build Finished ****

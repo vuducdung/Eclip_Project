@@ -1,0 +1,8 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -lopencv-core -l\ opencv_imgproc -lopencv_highgui  -lopencv_ml  -lopencv_video  -lpencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -l\ opencv_flann
+

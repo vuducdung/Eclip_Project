@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Openalpr/src/Binarization.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;Binarization.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Binarization.cpp" name="main.cpp" stamp="1492066874824" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Openalpr/src/main.cpp&apos; to &apos;Openalpr.cpp&apos;" description="Rename resource &apos;main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.cpp" name="Openalpr.cpp" stamp="1492068191837" updateReferences="true"/>
+</session>

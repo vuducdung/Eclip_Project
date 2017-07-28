@@ -1,0 +1,21 @@
+
+**** Build of configuration Debug for project A ****
+
+make all 
+Building file: ../ex/ass.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -Iusr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ex/ass.d" -MT"ex/ass.d" -o "ex/ass.o" "../ex/ass.cpp"
+Finished building: ../ex/ass.cpp
+ 
+Building file: ../ex/b.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -Iusr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ex/b.d" -MT"ex/b.d" -o "ex/b.o" "../ex/b.cpp"
+Finished building: ../ex/b.cpp
+ 
+Building target: A
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "A"  ./ex/ass.o ./ex/b.o   -lopencv_core -lopencv_imgcodecs -lopencv_highgui
+Finished building target: A
+ 
+
+**** Build Finished ****

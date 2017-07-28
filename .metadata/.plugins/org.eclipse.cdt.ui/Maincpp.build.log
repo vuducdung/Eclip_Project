@@ -1,0 +1,13 @@
+
+**** Build of configuration Debug for project Maincpp ****
+
+make all 
+Building target: Maincpp
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Maincpp"  ./src/Maincpp.o   -lopenalpr -ltesseract
+/usr/bin/ld: ./src/Maincpp.o: undefined reference to symbol '_ZN2cv6String10deallocateEv'
+//usr/local/lib/libopencv_core.so.3.2: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make: *** [Maincpp] Error 1
+
+**** Build Finished ****
